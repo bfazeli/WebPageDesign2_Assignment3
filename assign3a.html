@@ -4,9 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Assignment 3a</title>
 	<style>
-		li {
-			list-style-type: none;
-		}
 		.right {
 			float: right;
 			width: 40%;
@@ -29,44 +26,60 @@
 
 		.left {
 			float: left;
+			width: 40%;
+			height: 200px;
+			overflow: auto;
 		}
-		
-		.left ol :last-child {
-			background-color: #FCF9AE;
+		.left ol ul :nth-child(n+1) {
+			color: cyan;
+		}
+		.left ol :nth-child(n+1) {
+			color: blue;
+		}
+		.left ol {
+			list-style-type: upper-roman;
+		}
+		.left ol ul {
+			list-style-type: square;
 		}
 	</style>
 </head>
 <body>
 	<!--Container displaying a brief list of main topics learned thus far-->
 	<div class="left">
+		<h4>Here is a brief outline of the main topics that I have learned in Web Page Design 2 thus far:</h4>
 		<ol>
-			<li> Week 2
-				<ul>
-					<li>IDs and Classes</li>
-					<li>Group Selectors</li>
-					<li>Pseudo-classes and HyperText Styles</li>
-				</ul>
-			</li>
-			<li> Week 3
-				<ul>
-					<li>Cascade</li>
-					<li>Font Controls</li>
-					<li>Text Controls</li>
-					<li>Styling Lists</li>
-				</ul>
-			</li>
-			<li> Week 4
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</li>
+			<li> Week 1</li>
+			<ul>
+				<li>Introductions</li>
+				<li>Various Style Sheets</li>
+			</ul>
+			<br>
+			<li> Week 2</li>
+			<ul>
+				<li>IDs and Classes</li>
+				<li>Group Selectors</li>
+				<li>Pseudo-classes and HyperText Styles</li>
+			</ul>
+			<br>
+			<li> Week 3</li>
+			<ul>
+				<li>Cascade</li>
+				<li>Font Controls</li>
+				<li>Text Controls</li>
+				<li>Styling Lists</li>
+			</ul>
+			<br>
+			<li><span style="background-color: #FCF9AE;">Week 4</span></li>
+			<ul>
+				<li>Element Properties</li>
+				<li>Advanced Element Properties</li>
+			</ul>
 		</ol>
 	</div>
 	<!--Container displaying a list of links at the right side of the page-->
 	<div class="right">
-		<ul>
+		<ul style="list-style-type: none">
 			<li><a href="http://csjava.occ.cccd.edu/~pbarvarz">Pam Barvarz's Home page</a></li>
 			<li><a href="http://www.google.com">Search on google</a></li>
 			<li><a href="http://www.coolarchive.com/">Find an icon</a></li>
